@@ -129,14 +129,17 @@ nav img {
 /*-----------MENU---------*/
 menu {
     text-align: center
+    
 }
 menu ul {
     display: inline-block;
     text-align: center;
+    border-bottom: black solid 2px;
 }
 
 menu ul li {
     padding: 40px;
+    padding-bottom: 5px;
 }
 menu ul li a {
     text-decoration: none;
@@ -144,8 +147,42 @@ menu ul li a {
     color: #0080FF;
 }
 
-
 /*-----------MENU---------*/
+
+/*-----------MAIN---------*/
+
+main .container{
+    text-align: center;
+}
+
+main .container img {
+    width: 250px;
+    display: inline-block;
+    margin: 25px 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #0080FF;
+}
+
+main .maingames {
+    text-align: center; 
+}
+main .maingames img {
+    text-align: center;
+    height: 100%;
+    width: 250px;
+    border:2px solid black;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+    display: inline-block;
+    margin: 25px 25px;
+}
+/*-----------MAIN---------*/
+
 
 /*-------FOOTER--------*/
 footer {
@@ -161,6 +198,7 @@ footer {
 
 footer a {
     color: white;
+    text-decoration: none;
 }
 
 footer img {

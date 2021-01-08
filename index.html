@@ -4,32 +4,45 @@
     <title>GameHub - The universe of games</title>
     <meta name="description" content="This is the home page of GameHub.">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
 
     <header>
+      <!----NAVBAR---->
       <nav>
         <ul>
-          <li><a href="index.html" class="active"><img src="images/GameHub_Logo.png" alt="Logo"></a></li>
-          <li><a href="search.html">Search</a></li>
-        
+        <a href="index.html" id="logo"><img src="images/GameHub_Logo.png" alt="GameHub Logo"></a>
+        <li class="search-icon">
+          <input type="search" placeholder="">
+          <label class="icon">
+            <a href="search.html"><span class="fas fa-search"></span></a>
+        </li>
+        <div class="navlinks">
           <li><a href="contact.html">Contact Us</a> </li>
           <li><button><a href="createaccount.html">Register</a></button></li>
           <li><a href="account.html">Login</a></li>
-
+          <li class="cart-btn">
+            <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a> 
+          </li>    
+        </div>
+        
         </ul>
       </nav>
+      <!----NAVBAR--->
 
-      <nav>
+      <!----MENU---->
+      <menu>
         <ul>
-          <li> <a href="game.html">Action</a></li>
+          <li><a href="game.html">Action</a></li>
           <li><a href="game.html">Adventure</a> </li>
           <li><a href="game.html">Fantasy</a> </li>
           <li><a href="game.html">RPG</a> </li>
           <li><a href="game.html">Strategy</a> </li>
         </ul>
-      </nav>
+      </menu>
+      <!----MENU---->
     </header>
 
     <main>

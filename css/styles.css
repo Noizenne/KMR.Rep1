@@ -21,16 +21,10 @@ nav {
 
 #logo {
     margin: 15px; 
-    float: left;
+    position: relative;
     height: 60px;
     width: auto; 
     border-radius: 50%;
-}
-
-nav ul li #logo{
-    flex: 1;
-    font-size: 30px;
-    font-weight: 700;
 }
 
 nav img {
@@ -52,7 +46,7 @@ nav ul .navlinks li {
     padding: 10px;
 }
 nav ul div.navlinks {
-    padding: 0 0 0 100px;
+    padding: 0 0 0 150px;
     display: inline-block;
 }
 
@@ -66,9 +60,12 @@ nav ul li a {
 
 nav ul div.navlinks a:hover {
     text-decoration: none;
-    padding: 0 12px;
-    color: #0080FF;
+    color: #FF8800;
 }
+
+/*LINKS*/
+
+/*SEARCHBAR*/
 
 nav ul .search-icon {
     height: 35px;
@@ -102,13 +99,15 @@ nav ul .search-icon .icon {
 
 
 nav ul .search-icon .icon:hover {
-    background: #1B203D;
+    background: #0080FF;
 }
 
 nav ul .search-icon .icon span {
     color: #ffffff;
     font-size: 17px;
 }
+
+/*SEARCHBAR*/
 
 /*BUTTON*/
 
@@ -119,7 +118,7 @@ nav .btn button{
 }
 
 nav .btn a {
-    color: #FF8800;
+    color: #F2F2F2;
     border-radius:3px;
 }
 
@@ -130,7 +129,6 @@ nav ul .cart-btn {
     width: 25px;
     background-color: #1B203D;
     border-radius: 50%;
-    padding: 10px;
     display: inline-block;
     font-size: 20px;
 }
@@ -143,6 +141,16 @@ nav ul .cart-btn i{
     color: #ffffff;
     height: 100%;
     font-size: 20px;
+}
+
+label #btn, label #cancel {
+    color: #1B203D;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
 }
 
 /*-----------NAVBAR---------*/
@@ -173,7 +181,12 @@ menu ul li a {
     text-decoration: none;
     font-size: 30px;
     color: #0080FF;
-    font-family: 'Noto Sans';  
+    font-family: 'Noto Sans'; 
+}
+
+menu ul li a:hover {
+    color: #FF8800;
+    text-decoration: underline;
 }
 
 /*-----------MENU---------*/
@@ -216,6 +229,7 @@ main .maingames img {
     display: inline-block;
     margin: 25px 25px;
 }
+
 /*-----------MAIN---------*/
 
 
@@ -241,3 +255,4 @@ footer img {
     width: 130px;
 }
 /*-------FOOTER--------*/
+

@@ -1,11 +1,6 @@
-@font-face {
-    font-family: 'Noto Sans', sans-serif;
-}
-
 
 body {
     background-color: #F2F2F2; 
-    font-family: "Atten New";
    }
 
    /*-------NAVBAR------*/
@@ -36,8 +31,6 @@ nav img {
 
 nav ul {
    display: flex;
-   list-style: none;
-   flex-wrap: wrap;
    align-items: center;
    justify-content: center;
 }
@@ -163,18 +156,13 @@ menu {
 
 menu ul {
     display: inline-block;
-    text-align: center;
     border-bottom: black solid 2px;
     padding-inline-start: 0;
 }
 
-li {
-    display: inline-flex;
-}
-
-
 menu ul li {
     padding: 0 50px;
+    display: inline-flex;
 }
 
 menu ul li a {

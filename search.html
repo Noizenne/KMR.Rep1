@@ -5,32 +5,55 @@
     <meta name="description" content="Here you can search for your page.">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <header>
-      <nav>
+      <nav class="pagenav">
         <ul>
           <li><a href="index.html"><img src="images/GameHub_Logo.png" alt="Logo"></a></li>
-          <li><a href="search.html">Search</a></li>
+          <li class="search-icon">
+            <input type="search" placeholder="Search here">
+            <label class="icon">
+              <a href="search.html"><span class="fas fa-search"></span></a>
           <li> <a href="Account.html">Lorem Ipsum</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-        <a href="game.html"><img src="images/NoGame.png" alt="NoGame">
-        <h2>lorem ipsum</h2>
-        <p>jdsfljalifjlasjfinasinfiosdnfiodasiofhiafhjiaosjdiojasioj</p>
-        <p>20 $</p></a>
-        <a href="game.html"><img src="images/NoGame.png" alt="NoGame">
-        <h2>lorem ipsum</h2>
-        <p>jdsfljalifjlasjfinasinfiosdnfiodasiofhiafhjiaosjdiojasioj</p>
-        <p>20 $</p></a>
-        <a href="game.html"><img src="images/NoGame.png" alt="NoGame">
-        <h2>lorem ipsum</h2>
-        <p>jdsfljalifjlasjfinasinfiosdnfiodasiofhiafhjiaosjdiojasioj</p>
-        <p>20 $</p></a>
+    <main class="searchpagemain">
+      <div class="game">
+        <div class="gameimg"><a href="game.html"><img src="images/NoGame.png" alt="NoGame">
+        <div class="gametext">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p class="price">20 $</p></a>
+          </div>
+          </div>
+        </div>
+        <div class="game">
+        <div class="gameimg"><a href="game.html"><img src="images/NoGame.png" alt="NoGame">
+          <div class="gametext">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p class="price">20 $</p></a>
+          </div>
+        </div>
+        </div>
+        <div class="game">
+          <div class="gameimg"> <a href="game.html"><img src="images/NoGame.png" alt="NoGame">
+          <div class="gametext">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p class="price">20 $</p></a>
+          </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>

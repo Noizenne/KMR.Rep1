@@ -1,6 +1,7 @@
 
 body {
-    background-color: #F2F2F2; 
+    background-color: #F2F2F2;
+    padding: 20px;
    }
 
    /*-------NAVBAR------*/
@@ -56,8 +57,6 @@ nav ul div.navlinks a:hover {
     color: #FF8800;
 }
 
-/*LINKS*/
-
 /*SEARCHBAR*/
 
 nav ul .search-icon {
@@ -99,8 +98,6 @@ nav ul .search-icon .icon span {
     color: #ffffff;
     font-size: 17px;
 }
-
-/*SEARCHBAR*/
 
 /*BUTTON*/
 
@@ -146,8 +143,6 @@ label #btn, label #cancel {
     display: none;
 }
 
-/*-----------NAVBAR---------*/
-
 /*-----------MENU---------*/
 menu {
     text-align: center;
@@ -177,7 +172,6 @@ menu ul li a:hover {
     text-decoration: underline;
 }
 
-/*-----------MENU---------*/
 
 /*-----------MAIN---------*/
 
@@ -218,7 +212,137 @@ main .maingames img {
     margin: 25px 25px;
 }
 
-/*-----------MAIN---------*/
+/*----------Search Page--------*/
+
+.pagenav {
+    flex: 1;
+    text-align: right;
+}
+
+.pagenav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*SEARCHBAR*/
+.pagenav ul .search-icon {
+    height: 40px;
+    width: 350px;
+    display: flex;
+    background: #ffffff;
+    border: solid black 1px;
+    margin-bottom: 10px;
+}
+
+.pagenav ul .search-icon input {
+    height: 100%;
+    width: 300px;
+    outline: none;
+    padding: 0 10px;
+    border: none;
+    font-size: 23px;
+}
+.pagenav ul .search-icon .icon {
+    font-size: 18px;    
+    height: 100%;
+    width: 40px;
+    text-align: right;
+    background:#1B203D;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul .pagenav .search-icon .icon:hover {
+    background: #0080FF;
+}
+
+ul .pagenav .search-icon .icon span {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+ul .pagenav li a {
+    font-family: "Noto Sans";
+    font-size: 18px;
+}
+
+/*Main*/
+
+.searchpagemain {
+    padding: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+.searchpagemain .gameimg{
+    display: flex;
+    margin: 10px;
+}
+.searchpagemain .gameimg a {
+    margin: 0;
+}
+
+.searchpagemain .gameimg img{
+    width: 250px;
+    border: solid black 2px;
+    text-align: center;
+    border:2px solid black;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+    display: inline-block;
+    margin: 25px 25px;
+}
+
+.searchpagemain .gametext {
+    margin-left: 70px;
+}
+
+.searchpagemain .gametext a {
+    text-decoration: none;
+}
+
+.searchpagemain .gametext h2 {
+    font-family: "Noto Sans";
+    color:#1B203D;
+    margin-top: 0;
+}
+
+.searchpagemain .gametext p {
+    font-family: "Open Sans";
+    color: black;
+}
+
+.searchpagemain .gametext .price {
+    color: #FF8800;
+    font-size: 23px;
+    font-family: "Noto Sans";
+    font-weight: bold;
+}
+
+/*----------Game Page--------*/
+nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+}
+
+nav li {
+    margin-right: 600px;
+}
+
+nav li a {
+    color: #1B203D;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "Noto Sans";
+}
+
 
 
 /*-------FOOTER--------*/
@@ -242,5 +366,5 @@ footer img {
     max-width: 200px;
     width: 130px;
 }
-/*-------FOOTER--------*/
+
 

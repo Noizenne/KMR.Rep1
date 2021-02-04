@@ -5,24 +5,38 @@
     <meta name="description" content="On this page you can register your account.">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main>
-        <li><a href="index.html"><img src="images/GameHub_Logo.png" alt="Logo"></a></li>
-        <li><a href="index.html"></a>Cancel</a></li>
 
-           <h1> Register GameHub Account</h1>
-            <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <button><a href="account.html"> Register</a></button>
-        </ul>
-    </main>
+    <nav>
+    <li class="logo"><a href="index.html"><img src="images/GameHub_Logo.png" alt="Logo"></a></li>
+    <h1>Register GameHub Account</h1>
+    <li><a href="index.html">Cancel</a></li>
+    </nav>
+
+    <main>
+      <div class="background">
+      <img src="images/GameHub_Logo.png" alt="Logo"></a></li>
+      <form action="action_page.php">
+        <div class="registerform">
+          <hr>
+      
+          <label for="email"><b></b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="psw"><b></b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><b></b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+      
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <button type="submit" class="registerbtn"><a href="account.html"> Register</a></button>
+        </div>
+  </div>
+</main>
 
     <footer>
       <img src="images/GameHub_Logo.png" alt="footerlogo">

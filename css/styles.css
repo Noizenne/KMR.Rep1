@@ -2,6 +2,7 @@
 body {
     background-color: #F2F2F2;
     padding: 20px;
+    max-width: 100%;
    }
 
    /*-------NAVBAR------*/
@@ -329,12 +330,8 @@ nav {
     list-style: none;
     display: flex;
     align-items: center;
-    margin-left: 300px;
 }
 
-nav li {
-    margin-right: 600px;
-}
 
 nav li a {
     color: #1B203D;
@@ -342,6 +339,147 @@ nav li a {
     text-decoration: none;
     font-family: "Noto Sans";
 }
+
+.gametitle h1 {
+    text-align: left;
+    color: #1B203D;
+    font-size: 27px;
+    margin-left: 250px;
+}
+
+.gametitle img {
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 250px;
+    border: solid black 2px;
+}
+
+.gametitle button {
+    background-color: #1B203D;
+    height: 35px;
+    width: 150px;
+    margin-left: 30px;
+    font-family: "Noto Sans";
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.gametitle button a {
+    color: #FF8800;
+    text-decoration: none;
+}
+
+.gamerow {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-right: 300px;
+    position: static;
+}
+.gameabout {
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 200px;
+}
+
+.gameabout h2 {
+    color: #1B203D;
+}
+
+.gameabout p {
+    color: #1B203D;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.gameinfo {
+    margin-top: 50px;
+    margin-left: 30px;
+    border: solid black 2px;
+    width: 280px;
+    font-family: "Open Sans";
+    font-size: 15px;
+    text-decoration: none;
+    position: static;
+}
+
+/*----Register/CreateAccount----*/
+
+/*NAV*/
+
+.background img{
+    opacity: 30%;
+    width: 80%;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+    margin-left: 150px;
+}
+
+nav {
+    margin-left: 190px;
+}
+
+nav li {
+    margin-left: 200px;
+}
+
+nav h1 {
+    margin-left: 200px;
+    color: #1B203D;
+    font-size: 30px;
+}
+
+nav li a {
+    color: #0080FF;
+    font-size: 23px;
+    font-family: "Noto Sans";
+}
+
+/*RegisterForm*/
+
+.registerform {
+    padding: 16px;
+    margin-left: 720px;
+}
+
+input[type=text], input[type=password] {
+    width: 300px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: block;
+    border: solid black 1px;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  .registerbtn {
+    background-color: #1B203D;
+    color:#FF8800;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  .registerform a {
+    color: #FF8800;
+  }
+
 
 
 

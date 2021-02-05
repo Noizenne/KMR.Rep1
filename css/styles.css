@@ -24,7 +24,9 @@ header {
 /*SEARCHBAR*/
 
 .search-icon {
-    margin-top: 25px;
+    flex: 1;
+    margin-top: 30px;
+    margin-left: 45px;
     height: 35px;
     width: 200px;
     display: flex;
@@ -52,6 +54,7 @@ header {
     background: #b6b4b4;
     border-radius: 50%;
     cursor: pointer;
+    margin-right: 0px;
 }
 
 .search-icon .icon span {
@@ -66,8 +69,9 @@ header {
 /*LINKS*/
 
 nav {
-	flex: 2;
+	flex: 1;
     margin-left: 0px;
+    justify-content: flex-end;
 }
 .nav-links {
 	justify-content: space-around;
@@ -77,6 +81,7 @@ nav {
 }
 .nav-links li {
     margin-left: 150px;
+    margin-right: 20px;
 }
 .nav-link {
 	color: #1B203D;
@@ -91,7 +96,7 @@ nav {
 .cart {
 	flex: 1;
 	justify-content: flex-end;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .cart-btn {
@@ -385,7 +390,59 @@ nav li a {
     position: relative;
 }
 
-/*----Register/CreateAccount----*/
+/*----ACCOUNT PAGE----*/
+
+.accountmain {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accountmain h2 {
+    font-family: "open sans";
+    color: #1B203D;
+}
+
+.accimg {
+    display: inline-block;
+}
+.accountmain .accimg img {
+    width: 200px;
+    border: solid black 2px;
+}
+
+.accdetails {
+    display: inline-block;
+    width: 650px;
+    border: solid black 2px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 100px;
+}
+
+.accdetails h3{
+    margin-left: 10px;
+}
+.accdetails li {
+    color: #0080FF;
+    line-height: 30px;
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.accgames {
+    display: inline;
+    margin-top: 20px;
+}
+
+.accgames img {
+    width: 300px;
+    margin: 10px;
+    border: solid black 2px;
+}
+
+/*----Register/CreateAccount // Checkout----*/
 
 /*NAV*/
 
@@ -478,12 +535,130 @@ input[type=text], input[type=password] {
     font-size: 20px;
   }
 
-/*-------Checkout--------*/
+/*-------Checkout-------*/
 
 label {
     color: #0080FF;
     margin-right: 230px;
 }
+
+/*-------Checkoutsuccess-------*/
+
+h1 {
+    margin-bottom: 20px;
+    color: #1B203D;
+    font-family: "open sans";
+}
+table {
+    font-family: "open sans";
+    border-collapse: collapse;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+  }
+  
+  td, th {
+    line-height: 30px;
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+
+  }
+  .gone {
+      border: none;
+      background-color: none;
+  }
+
+  .total {
+      color: #FF8800;
+  }
+
+  .back {
+      width: 100%;
+      text-align: center;
+      margin-top: 100px;
+  }
+
+  .back a {
+      font-family: "open sans";
+      color: #0080FF;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+  }
+  
+  
+/*-------CONTACT--------*/
+
+.contact {
+    margin-top: 100px;
+}
+.contact h1 {
+    margin-top: auto;
+}
+
+.contact .search-icon-contact {
+    height: 40px;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #ffffff;
+    border: solid black 1px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.contact .search-icon-contact input {
+    height: 100%;
+    width: 300px;
+    outline: none;
+    padding: 0 10px;
+    border: 6px;
+    font-size: 23px;
+    margin-left: 10px;
+}
+.contact .search-icon-contact .icon {
+    font-size: 18px;    
+    height: 100%;
+    width: 40px;
+    text-align: right;
+    background:#1B203D;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.contact .search-icon-contact .icon:hover {
+    background: #0080FF;
+}
+
+.contact .search-icon-contact .icon span {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.helpbtn {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.helpbtn ul {
+    padding: 0;
+}
+
+.helpbtn button {
+    margin: 25px;
+    line-height: 30px;
+    width: 10%;
+    font-family: "open sans";
+    color: #FF8800;
+    background-color: #1B203D;
+    border-radius: 5px;
+}
+
 /*-------FOOTER--------*/
 footer {
     background-color: #1B203D;

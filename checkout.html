@@ -2,25 +2,46 @@
 <html>
   <head>
     <title>Checkout</title>
-    <meta name="description" content="Checkout">
+    <meta name="description" content="This is the checkout page of GameHub.">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body>
-    <main>
-      <li><a href="index.html"><img src="images/GameHub_Logo.png" alt="Logo"></a></li>
-        <li><a href="index.html"></a>Cancel</a></li>
 
-        <h1>Checkout</h1>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <p>Terms</p>
-            <button>Pay Now</button>
-        </ul>
-    </main>
+  <body class="bg">
+
+    <header>
+      <nav class="createacc">
+         <div class="logo">
+           <a href="index.html"><img src="images/GameHub_Logo.png" alt="Logo"></a>
+      </div>
+         <div class="registertext">
+           <h1>Checkout</h1>
+      </div>
+         <div class="registercancel">
+           <a href="index.html">Cancel</a>
+      </div>
+    </header>
+
+    <main class="register">
+      <form action="action_page.php">
+        <div class="registerform">
+
+          <label for="Visa/MasterCard"><b>Pay with</b></label>
+          <input type="text" placeholder="Visa / MasterCard" name="visa/m">
+      
+          <label for="Card"><b>Details</b></label>
+          <input type="text" placeholder="xxxx xxxx xxxx 1234" name="card">
+      
+          <label for="Date"><b></b></label>
+          <input type="text" placeholder="Month / Year" name="date">
+
+          <label for="Cvc"><b></b></label>
+          <input type="text" placeholder="CVC" name="cvc">
+
+          <button type="submit" class="registerbtn"><a href="chekcoutsuccess.html"> Pay Now</a></button>
+        </div>
+  </div>
+</main>
 
     <footer>
       <img src="images/GameHub_Logo.png" alt="footerlogo">

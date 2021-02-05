@@ -13,35 +13,31 @@
   <body>
 
     <header>
-      <!----NAVBAR---->
-      <nav>
-        <ul>
-        <a href="index.html" id="logo"><img src="images/GameHub_Logo.png" alt="GameHub Logo"></a>
+			<div class="logo">
+				<img src="images/GameHub_Logo.png" alt="logo" />
         <li class="search-icon">
           <input type="search" placeholder="">
           <label class="icon">
             <a href="search.html"><span class="fas fa-search"></span></a>
         </li>
-        <div class="navlinks">
-          <li><a href="contact.html">Contact Us</a> </li>
-          <li class="btn"><button ><a href="createaccount.html">Register</a></button></li>
-          <li><a href="account.html">Login</a></li>
-          <li class="cart-btn">
-            <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a> 
-          </li>   
-          <input type="checkbox" id="check">
-          <label for="check">
-            <i class="fas fa-bars" id="btn"></i>
-            <i class="fas fa-times" id="cancel"></i>
-          </label>
-        </div>
-        
-        </ul>
-      </nav>
-      <!----NAVBAR--->
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href="contact.html">Contact Us</a></li>
+					<li><a class="nav-link" href="createaccount.html">Register</a></li>
+					<li><a class="nav-link" href="account.html">Log In</a></li>
+				</ul>
+			</nav>
+			<div class="cart">
+				<li class="cart-btn">
+          <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a> 
+        </li>   
+			</div>
+		</header>
+
 
       <!----MENU---->
-      <menu>
+      <nav class="nav2">
         <ul>
           <li><a href="game.html">Action</a></li>
           <li><a href="game.html">Adventure</a> </li>
@@ -49,8 +45,7 @@
           <li><a href="game.html">RPG</a> </li>
           <li><a href="game.html">Strategy</a> </li>
         </ul>
-      </menu>
-      <!----MENU---->
+      </nav>
     </header>
 
 
@@ -69,7 +64,6 @@
       <a href="game.html"> <img src="images/NoGame.png" alt="NoGame"> </a>
       </div>
     </div>
-    <!----MAIN--->
     </main>
 
     <!----FOOTER--->
@@ -77,6 +71,5 @@
       <img src="images/GameHub_Logo.png" alt="footerlogo">
       &copy; GameHub 2020 <a href="#">Privacy Policy</a>
     </footer>
-    <!----FOOTER--->
   </body>
 </html>

@@ -241,17 +241,15 @@ main .games img {
 
 .navbar .search-icon input {
     height: 100%;
-    width: 300px;
+    width: 380px;
     outline: none;
     padding: 0 10px;
     border: none;
     font-size: 23px;
 }
-.navbar .search-icon .icon {
-    font-size: 18px;    
-    height: 100%;
-    width: 40px;
-    text-align: right;
+.navbar .search-icon .icon {   
+    height: 40px;
+    width: 50px;
     background:#1B203D;
     border-radius: 50%;
     cursor: pointer;
@@ -426,8 +424,6 @@ nav li a {
 }
 
 /*------Register/CreateAccount // Checkout------*/
-
-/*NAV*/
 
 .registertext, .registercancel{
     flex: 1;

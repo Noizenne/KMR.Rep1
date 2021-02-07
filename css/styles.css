@@ -1,4 +1,22 @@
 
+/*-----------Base---------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
 header {
 	display: flex;
 	width: 80%;
@@ -7,13 +25,36 @@ header {
 	align-items: center;
 }
 
+.navbar {
+    display: flex;
+    margin: 0;
+}
+
+.navbar img {
+    width: 150px;
+	margin: 5px;
+    margin-right: 30px;
+}
+
+main {
+    padding: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.bg {
+    background-image: url(/images/GameHub_Logocopy.svg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+/*-----------HOME PAGE-----------*/
 .logo, .nav-links, .cart {
 	display: flex;
 }
 
 .logo {
     flex: 1;
-    margin-left: 50px;
 }
 .logo img{
 	width: 150px;
@@ -26,7 +67,7 @@ header {
 .search-icon {
     flex: 1;
     margin-top: 30px;
-    margin-left: 45px;
+    margin-left: 20px;
     height: 35px;
     width: 200px;
     display: flex;
@@ -86,8 +127,6 @@ nav {
 .nav-link {
 	color: #1B203D;
 	font-size: 18px;
-    font-family: "noto sans";
-	text-decoration: none;
     white-space: nowrap;
 }
 
@@ -142,7 +181,7 @@ nav {
     font-size: 25px;
 }
 
-/*-----------MAIN---------*/
+/*MAIN*/
 
 main .container{
     text-align: center;
@@ -162,14 +201,12 @@ main .container img {
 h1 {
     text-align: center;
     color: #0080FF;
-    font-family: 'Noto Sans';
-    
 }
 
-main .maingames {
+main .games {
     text-align: center; 
 }
-main .maingames img {
+main .games img {
     text-align: center;
     height: 100%;
     width: 250px;
@@ -183,19 +220,9 @@ main .maingames img {
 }
 
 /*----------Search Page--------*/
-.pagenav {
-    display: flex;
-    margin: auto;
-}
 
-.logo, .search-icon, .account {
+.search-icon, .account {
     flex: 1;
-}
-
-.pagenav img {
-    width: 150px;
-	margin: 5px;
-    margin-right: 30px;
 }
 
 /*SEARCHBAR*/
@@ -203,7 +230,7 @@ main .maingames img {
 .search-icon li {
     margin-left: 0px;
 }
-.pagenav .search-icon {
+.navbar .search-icon {
     height: 40px;
     width: 350px;
     display: flex;
@@ -212,7 +239,7 @@ main .maingames img {
     margin-bottom: 10px;
 }
 
-.pagenav .search-icon input {
+.navbar .search-icon input {
     height: 100%;
     width: 300px;
     outline: none;
@@ -220,7 +247,7 @@ main .maingames img {
     border: none;
     font-size: 23px;
 }
-.pagenav .search-icon .icon {
+.navbar .search-icon .icon {
     font-size: 18px;    
     height: 100%;
     width: 40px;
@@ -230,17 +257,15 @@ main .maingames img {
     cursor: pointer;
 }
 
-.pagenav .search-icon .icon:hover {
+.navbar .search-icon .icon:hover {
     background: #0080FF;
 }
 
-.pagenav .search-icon .icon span {
+.navbar .search-icon .icon span {
     color: #ffffff;
     font-size: 17px;
 }
-
-.pagenav li a {
-    font-family: "Noto Sans";
+.navbar li a {
     font-size: 18px;
 }
 
@@ -253,29 +278,20 @@ main .maingames img {
 
 .account a {
     color: #1B203D;
-    text-decoration: none;
     font-size: 20px;
-    font-family: "noto sans";
 }
 
 /*Main*/
 
-.searchpagemain {
-    padding: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-
-.searchpagemain .gameimg{
+ .gameimg{
     display: flex;
     margin: 10px;
 }
-.searchpagemain .gameimg a {
+ .gameimg a {
     margin: 0;
 }
 
-.searchpagemain .gameimg img{
+.gameimg img{
     width: 250px;
     border: solid black 2px;
     text-align: center;
@@ -287,63 +303,47 @@ main .maingames img {
     display: inline-block;
     margin: 25px 25px;
 }
-
-.searchpagemain .gametext {
+.gametext {
     margin-left: 70px;
 }
 
-.searchpagemain .gametext a {
-    text-decoration: none;
-}
-
-.searchpagemain .gametext h2 {
-    font-family: "Noto Sans";
+.gametext h2 {
     color:#1B203D;
     margin-top: 0;
 }
 
-.searchpagemain .gametext p {
+.gametext p {
     font-family: "Open Sans";
     color: black;
 }
 
-.searchpagemain .gametext .price {
+.gametext .price {
     color: #FF8800;
     font-size: 23px;
-    font-family: "Noto Sans";
     font-weight: bold;
 }
 
-/*----------Game Page--------*/
+/*----------Game Page-----------*/
 nav {
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-.accountpage {
-    margin: 0px;
-}
-
-
 nav li a {
     color: #1B203D;
     font-size: 20px;
-    text-decoration: none;
-    font-family: "Noto Sans";
 }
 
 .gametitle h1 {
     text-align: left;
     color: #1B203D;
     font-size: 27px;
-    margin-left: 250px;
 }
 
 .gametitle img {
     width: 250px;
     margin-top: 20px;
-    margin-left: 250px;
     border: solid black 2px;
 }
 
@@ -352,30 +352,21 @@ nav li a {
     height: 35px;
     width: 150px;
     margin-left: 30px;
-    font-family: "Noto Sans";
     border-radius: 4px;
     text-decoration: none;
 }
 
 .gametitle button a {
     color: #FF8800;
-    text-decoration: none;
 }
 
 .gamerow {
     display: grid;
-    grid-template-columns: 70% 30%;
-    margin-right: 300px;
+    grid-template-columns: 50% 50%;
     position: static;
 }
 .gameabout {
     margin-top: 20px;
-    margin-left: 250px;
-    margin-right: 200px;
-}
-
-.gameabout h2 {
-    color: #1B203D;
 }
 
 .gameabout p {
@@ -385,25 +376,23 @@ nav li a {
 }
 
 .gameinfo {
-    margin-top: 50px;
-    margin-left: 30px;
+    margin-top: 70px;
+    margin-left: 150px;
     border: solid black 2px;
-    width: 280px;
+    width: 250px;
+    height: 150px;
     font-family: "Open Sans";
     font-size: 15px;
     text-decoration: none;
     position: relative;
 }
 
-/*----ACCOUNT PAGE----*/
-
-.accountmain {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+.gameinfo ul {
+    padding: 10px;
 }
+/*-------------ACCOUNT PAGE-----------*/
 
-.accountmain h2 {
+.acch {
     font-family: "open sans";
     color: #1B203D;
 }
@@ -411,7 +400,7 @@ nav li a {
 .accimg {
     display: inline-block;
 }
-.accountmain .accimg img {
+.accimg img {
     width: 200px;
     border: solid black 2px;
 }
@@ -436,31 +425,9 @@ nav li a {
     margin-left: 10px;
 }
 
-.accgames {
-    display: inline;
-    margin-top: 20px;
-}
-
-.accgames img {
-    width: 300px;
-    margin: 10px;
-    border: solid black 2px;
-}
-
-/*----Register/CreateAccount // Checkout----*/
+/*------Register/CreateAccount // Checkout------*/
 
 /*NAV*/
-
-.bg {
-    background-image: url(/images/GameHub_Logocopy.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.createacc {
-    display: flex;
-}
 
 .registertext, .registercancel{
     flex: 1;
@@ -481,12 +448,11 @@ nav li a {
 
 .registercancel a {
     color: #0080FF;
-    text-decoration: none;
     font-family: "open sans";
     font-size: 25px;
 }
-/*RegisterForm*/
 
+/*RegisterForm*/
 .register {
     width: 80%;
     margin: auto;
@@ -516,8 +482,6 @@ input[type=text], input[type=password] {
     background-color: #f1f1f1;
     outline: none;
   }
-  
- 
 
   .registerbtn {
     background-color: #1B203D;
@@ -535,20 +499,21 @@ input[type=text], input[type=password] {
   
   .registerform a {
     color: #FF8800;
-    text-decoration: none;
-    font-family: "noto sans";
     font-size: 20px;
   }
 
-/*-------Checkout-------*/
-
+/*-------------Checkout---------------*/
 label {
     color: #0080FF;
     margin-right: 230px;
 }
 
-/*-------Checkoutsuccess-------*/
+/*---------Checkoutsuccess-------------*/
 
+.ty {
+    margin-top: 280px;
+    margin-left: 70px;
+}
 h1 {
     margin-bottom: 20px;
     color: #1B203D;
@@ -588,14 +553,11 @@ table {
   .back a {
       font-family: "open sans";
       color: #0080FF;
-      text-decoration: none;
       font-size: 20px;
       font-weight: 600;
   }
   
-  
-/*-------CONTACT--------*/
-
+/*------------------CONTACT------------------*/
 .contact {
     margin-top: 100px;
 }
@@ -664,7 +626,7 @@ table {
     border-radius: 5px;
 }
 
-/*-------FOOTER--------*/
+/*--------------FOOTER------------*/
 footer {
     background-color: #1B203D;
     margin: 0px;
@@ -678,7 +640,6 @@ footer {
 
 footer a {
     color: white;
-    text-decoration: none;
 }
 
 footer img {
@@ -687,3 +648,23 @@ footer img {
 }
 
 
+/*********Tablet**********/
+@media screen and (max-width: 1300px) {
+    .nav-links li {
+        margin-left: 100px;
+    }
+
+    .search-icon {
+        margin-left: 0;
+    }
+
+    .container {
+
+        display: inline-block;
+    }
+
+    .container img {
+        height: 20vh;
+    }
+
+}
